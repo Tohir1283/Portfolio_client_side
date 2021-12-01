@@ -1,0 +1,18 @@
+.home-banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #23343c;
+}
+
+.portfolio_image {
+  padding: 0;
+}
+
+.portfolio_image img {
+  width: 500px;
+  height: 100%;
+  border: 1px solid #23343c;
+  margin: -07px;
+}

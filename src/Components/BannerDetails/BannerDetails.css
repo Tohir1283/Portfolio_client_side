@@ -1,0 +1,29 @@
+.banner-details {
+  text-align: start;
+}
+
+.banner-details h2,
+h3,
+h5 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.banner-details h2 {
+  font-size: 3rem;
+}
+.banner-details h3 {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.banner-details button {
+  margin: 2rem 2rem 0 0;
+  padding: 0.7rem 2rem;
+  font-weight: 600;
+  color: #fff724;
+  background-color: #23343c;
+  border: 1px solid #fff724;
+}
