@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const title = ["< ", "Tohirul Islam", " />"];
   return (
-    <div>
+    <div style={{ position: "fixed",width: "100%", height: ""}}>
       <nav className="navbar ">
         <div className="title">
           <h2>{title[0] + title[1] + title[2]}</h2>

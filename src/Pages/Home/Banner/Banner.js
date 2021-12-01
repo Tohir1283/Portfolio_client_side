@@ -11,14 +11,11 @@ const Banner = () => {
         </div>
         <div className="portfolio_image">
           <img
-            src="https://i.ibb.co/yP3xfMc/Untitled-design-5.png"
+            src="https://i.ibb.co/cLTyzrF/Untitled-design-6-removebg-preview-1.png"
             alt="portfolio"
           />
         </div>
       </div>
-      <br />
-      <br />
-      <br />
     </div>
   );
 };

@@ -5,7 +5,6 @@ const Projects = () => {
   return (
     <div>
       <Header />
-      <h2>bye</h2>
     </div>
   );
 };
