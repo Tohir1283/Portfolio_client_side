@@ -13,6 +13,7 @@ const About = () => {
       <br />
       <br />
       <br />
+      <br />
       <Container>
         <Grid container spacing={10}>
           <Grid item sm={5} sx={{ display: { xs: "none", sm: "block" } }}>

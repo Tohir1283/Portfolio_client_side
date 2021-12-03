@@ -51,7 +51,11 @@ export const RenderSectionHeading = ({
       >
         {heading}
       </Typography>
+      <br />
+
       <Divider />
+      <br />
+
       <Typography
         variant="body1"
         align={centerAlign ? "center" : "left"}
@@ -59,6 +63,7 @@ export const RenderSectionHeading = ({
       >
         {description1}
       </Typography>
+      <p></p>
       <Typography
         variant="body1"
         align={centerAlign ? "center" : "left"}
