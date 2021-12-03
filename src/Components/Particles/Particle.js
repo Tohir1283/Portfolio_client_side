@@ -1,7 +1,10 @@
 import React from "react";
 import Particles from "react-tsparticles";
+import { useStyles } from "./../../Styles/useStyles";
 
 const Particle = () => {
+  const classes = useStyles();
+
   const particlesInit = (main) => {
     console.log(main);
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
@@ -11,84 +14,86 @@ const Particle = () => {
     console.log(container);
   };
   return (
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={{
-        fpsLimit: 45,
-        interactivity: {
-          events: {
-            onClick: {
-              enable: true,
-              mode: "push",
+    <div className={classes.particles}>
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          fpsLimit: 45,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
             },
-            onHover: {
-              enable: true,
-              mode: "repulse",
+            modes: {
+              bubble: {
+                distance: 50,
+                duration: 2,
+                opacity: 0.5,
+                size: 140,
+              },
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 50,
+                duration: 0.4,
+              },
             },
-            resize: true,
           },
-          modes: {
-            bubble: {
-              distance: 50,
-              duration: 2,
-              opacity: 0.5,
-              size: 140,
+          particles: {
+            color: {
+              value: "#ffffff",
             },
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 50,
-              duration: 0.4,
-            },
-          },
-        },
-        particles: {
-          color: {
-            value: "#ffffff",
-          },
 
-          links: {
-            color: "#ffffff",
-            distance: 150,
-            enable: true,
-            opacity: 0.2,
-            width: 1,
-          },
-          collisions: {
-            enable: true,
-          },
-          move: {
-            direction: "none",
-            enable: true,
-            outMode: "bounce",
-            random: false,
-            speed: 2,
-            straight: false,
-          },
-          number: {
-            density: {
+            links: {
+              color: "#ffffff",
+              distance: 150,
               enable: true,
-              value_area: 1500,
+              opacity: 0.2,
+              width: 1,
             },
-            value: 80,
+            collisions: {
+              enable: true,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outMode: "bounce",
+              random: false,
+              speed: 2,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                value_area: 1500,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "edge",
+            },
+            size: {
+              random: true,
+              value: 4,
+            },
           },
-          opacity: {
-            value: 0.5,
-          },
-          shape: {
-            type: "edge",
-          },
-          size: {
-            random: true,
-            value: 4,
-          },
-        },
-        detectRetina: true,
-      }}
-    />
+          detectRetina: true,
+        }}
+      />
+    </div>
   );
 };
 

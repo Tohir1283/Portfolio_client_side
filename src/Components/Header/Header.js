@@ -29,7 +29,7 @@ const Header = () => {
             component="h6"
             className={classes.headerDesc}
           ></Typography>
-          <Fade down>
+          <Fade right>
             <Typography
               variant="span"
               className={classes.headerDesc}

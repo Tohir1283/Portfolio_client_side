@@ -2,6 +2,7 @@ import { useStyles } from "../../Styles/useStyles";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import { Typewriter } from "react-simple-typewriter";
 
 export const Decorator = ({ label, withIcon, styles }) => {
   const classes = useStyles();
@@ -19,10 +20,10 @@ export const Decorator = ({ label, withIcon, styles }) => {
   );
 };
 
-export const Divider = () => {
+export const Divider = ({ style }) => {
   const classes = useStyles();
   return (
-    <Box>
+    <Box style={style} sx={{ my: 2 }}>
       <Typography variant="span" className={classes.divider}></Typography>
     </Box>
   );
@@ -34,8 +35,11 @@ export const RenderSectionHeading = ({
   centerAlign,
   description1,
   description2,
+  width,
 }) => {
   const classes = useStyles();
+  const words = [];
+  words.push(heading);
   return (
     <Box className={classes.sectionHeadingContainer}>
       {Decorator({
@@ -49,12 +53,23 @@ export const RenderSectionHeading = ({
         align={centerAlign ? "center" : "left"}
         className={classes.sectionHeading}
       >
-        {heading}
+        <span className={classes.headerDesc}>
+          {/* Style will be inherited from the parent element */}
+          {heading && (
+            <Typewriter
+              words={words}
+              loop={5000}
+              cursor
+              cursorStyle="_"
+              typeSpeed={170}
+              deleteSpeed={150}
+              delaySpeed={500}
+            />
+          )}
+        </span>
       </Typography>
-      <br />
 
-      <Divider />
-      <br />
+      <Divider style={width} />
 
       <Typography
         variant="body1"

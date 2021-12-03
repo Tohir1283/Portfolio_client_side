@@ -95,6 +95,11 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
 
+  // Styles for Particles
+  particles: {
+    zIndex: -1,
+  },
+
   // Styles For Web Application Body
   section: {
     backgroundColor: Themes.colors.base1,
@@ -109,10 +114,8 @@ export const useStyles = makeStyles((theme) => ({
   // Styles For Section Title Divider
   divider: {
     display: "block",
-    width: "165px",
     height: "4px",
     backgroundColor: Themes.colors.primary,
-    margin: theme.spacing(2, 0),
   },
   // About Me image responsive Styling
   responsiveImage: {
@@ -123,11 +126,9 @@ export const useStyles = makeStyles((theme) => ({
   sectionHeading: {
     fontWeight: 700,
     color: Themes.colors.base2,
-    margin: theme.spacing(1, 0),
   },
   // About Me Description
   sectionDesc: {
     color: Themes.colors.base2,
-    margin: theme.spacing(1, 0),
   },
 }));
