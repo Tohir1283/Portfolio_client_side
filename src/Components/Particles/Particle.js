@@ -73,7 +73,7 @@ const Particle = () => {
               enable: true,
               value_area: 1500,
             },
-            value: 180,
+            value: 80,
           },
           opacity: {
             value: 0.5,
