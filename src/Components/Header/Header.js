@@ -63,8 +63,8 @@ const Header = () => {
                   loop={5}
                   cursor
                   cursorStyle="_"
-                  typeSpeed={120}
-                  deleteSpeed={90}
+                  typeSpeed={170}
+                  deleteSpeed={150}
                   delaySpeed={500}
                 />
               </span>
