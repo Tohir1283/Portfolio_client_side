@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { Typewriter } from "react-simple-typewriter";
+import Fade from "react-reveal/Fade";
 
 export const Decorator = ({ label, withIcon, styles }) => {
   const classes = useStyles();
@@ -39,53 +40,68 @@ export const RenderSectionHeading = ({
 }) => {
   const classes = useStyles();
   const words = [];
-  words.push(heading);
+  if (heading) {
+    for (let i = 0; i < 5; i++) {
+      words.push(heading);
+    }
+  }
+  console.log(words);
   return (
     <Box className={classes.sectionHeadingContainer}>
-      {Decorator({
-        label: sectionLabel,
-        withIcon: false,
-        style: centerAlign ? { width: "100px", margin: "10px auto" } : "",
-      })}
-      <Typography
-        sx={{ fontWeight: "bold" }}
-        variant="h5"
-        align={centerAlign ? "center" : "left"}
-        className={classes.sectionHeading}
-      >
-        <span className={classes.headerDesc}>
-          {/* Style will be inherited from the parent element */}
-          {heading && (
-            <Typewriter
-              words={words}
-              loop={5000}
-              cursor
-              cursorStyle="_"
-              typeSpeed={170}
-              deleteSpeed={150}
-              delaySpeed={500}
-            />
+      <Fade right>
+        {" "}
+        {Decorator({
+          label: sectionLabel,
+          withIcon: false,
+          style: centerAlign ? { width: "100px", margin: "10px auto" } : "",
+        })}{" "}
+      </Fade>
+      <Fade right>
+        <Typography
+          sx={{ fontWeight: "bold" }}
+          variant="h5"
+          align={centerAlign ? "center" : "left"}
+          className={classes.sectionHeading}
+        >
+          {words.length === 5 && (
+            <span className={classes.headerDesc}>
+              {/* Style will be inherited from the parent element */}
+              {heading && (
+                <Typewriter
+                  words={[...words]}
+                  loop={5}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={500}
+                />
+              )}
+            </span>
           )}
-        </span>
-      </Typography>
-
+        </Typography>
+      </Fade>
       <Divider style={width} />
 
-      <Typography
-        variant="body1"
-        align={centerAlign ? "center" : "left"}
-        className={classes.sectionDesc}
-      >
-        {description1}
-      </Typography>
+      <Fade right>
+        <Typography
+          variant="body1"
+          align={centerAlign ? "center" : "left"}
+          className={classes.sectionDesc}
+        >
+          {description1}
+        </Typography>
+      </Fade>
       <p></p>
-      <Typography
-        variant="body1"
-        align={centerAlign ? "center" : "left"}
-        className={classes.sectionDesc}
-      >
-        {description2}
-      </Typography>
+      <Fade right>
+        <Typography
+          variant="body1"
+          align={centerAlign ? "center" : "left"}
+          className={classes.sectionDesc}
+        >
+          {description2}
+        </Typography>
+      </Fade>
     </Box>
   );
 };
