@@ -1,12 +1,13 @@
 import Image from "../media/brandBanner.2541860e.jpg";
 import { makeStyles } from "@material-ui/core";
 import { Themes } from "./../Components/Themes/Themes";
+import { Theme } from "tsparticles/Options/Classes/Theme/Theme";
 
 export const useStyles = makeStyles((theme) => ({
   //Top Banner Styling for landing page
   root: {
     width: "100%",
-    minHeight: "80vh",
+    maxHeight: "90vh",
     height: "auto",
     background: `linear-gradient(to bottom right,#04303140
     ,#00606473
@@ -18,7 +19,7 @@ export const useStyles = makeStyles((theme) => ({
   //Styling of  Section containing landing banner information
   headerContainer: {
     width: "100%",
-    minHeight: "85vh",
+    maxHeight: "85vh",
     boxSizing: "border-box",
     height: "auto",
     padding: "17% 10%",
@@ -99,5 +100,35 @@ export const useStyles = makeStyles((theme) => ({
   section: {
     backgroundColor: Themes.colors.base1,
     padding: theme.spacing(10, 0, 8, 0),
+  },
+
+  // Style For About ME section
+  sectionHeadingContainer: {
+    padding: theme.spacing(1),
+  },
+
+  // Styles For Section Title Divider
+  divider: {
+    display: "block",
+    width: "165px",
+    height: "4px",
+    backgroundColor: Themes.colors.primary,
+    margin: theme.spacing(2, 0),
+  },
+  // About Me image responsive Styling
+  responsiveImage: {
+    width: "100%",
+    height: "auto",
+  },
+  // About Me Title
+  sectionHeading: {
+    fontWeight: 700,
+    color: Themes.colors.base2,
+    margin: theme.spacing(1, 0),
+  },
+  // About Me Description
+  sectionDesc: {
+    color: Themes.colors.base2,
+    margin: theme.spacing(1, 0),
   },
 }));

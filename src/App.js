@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home/Home";
+import Particle from "./Components/Particles/Particle";
 
 function App() {
   return (

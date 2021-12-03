@@ -3,10 +3,10 @@ import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
-export const Decorator = ({ label, withIcon }) => {
+export const Decorator = ({ label, withIcon, styles }) => {
   const classes = useStyles();
   return (
-    <Box className={classes.decorator}>
+    <Box className={classes.decorator} style={styles}>
       <Typography variant="span" className={classes.decoratorText}>
         {label}
       </Typography>
@@ -18,4 +18,54 @@ export const Decorator = ({ label, withIcon }) => {
     </Box>
   );
 };
-// export const RenderSectionHeading = () => {};
+
+export const Divider = () => {
+  const classes = useStyles();
+  return (
+    <Box>
+      <Typography variant="span" className={classes.divider}></Typography>
+    </Box>
+  );
+};
+
+export const RenderSectionHeading = ({
+  sectionLabel,
+  heading,
+  centerAlign,
+  description1,
+  description2,
+}) => {
+  const classes = useStyles();
+  return (
+    <Box className={classes.sectionHeadingContainer}>
+      {Decorator({
+        label: sectionLabel,
+        withIcon: false,
+        style: centerAlign ? { width: "100px", margin: "10px auto" } : "",
+      })}
+      <Typography
+        sx={{ fontWeight: "bold" }}
+        variant="h5"
+        align={centerAlign ? "center" : "left"}
+        className={classes.sectionHeading}
+      >
+        {heading}
+      </Typography>
+      <Divider />
+      <Typography
+        variant="body1"
+        align={centerAlign ? "center" : "left"}
+        className={classes.sectionDesc}
+      >
+        {description1}
+      </Typography>
+      <Typography
+        variant="body1"
+        align={centerAlign ? "center" : "left"}
+        className={classes.sectionDesc}
+      >
+        {description2}
+      </Typography>
+    </Box>
+  );
+};
