@@ -1,7 +1,6 @@
 import Image from "../media/brandBanner.2541860e.jpg";
 import { makeStyles } from "@material-ui/core";
 import { Themes } from "./../Components/Themes/Themes";
-import { Theme } from "tsparticles/Options/Classes/Theme/Theme";
 
 export const useStyles = makeStyles((theme) => ({
   //Top Banner Styling for landing page

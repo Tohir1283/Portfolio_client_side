@@ -6,7 +6,6 @@ import { Typography } from "@mui/material";
 import Fade from "react-reveal/Fade";
 import { Typewriter } from "react-simple-typewriter";
 import { Decorator } from "../commonComponents/commonComponents";
-import Particle from "../Particles/Particle";
 
 const Header = () => {
   const classes = useStyles();
