@@ -1,8 +1,6 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Contact from "./Pages/Contact/Contact";
-import Home from "./Pages/Home/Home/Home";
-import Projects from "./Pages/Projects/Projects";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
@@ -15,12 +13,8 @@ function App() {
           <Route exact path="/home">
             <Home />
           </Route>
-          <Route exact path="/projects">
-            <Projects />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
+          <Route exact path="/projects"></Route>
+          <Route exact path="/contact"></Route>
         </Switch>
       </BrowserRouter>
     </div>
