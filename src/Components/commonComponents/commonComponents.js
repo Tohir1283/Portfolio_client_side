@@ -5,10 +5,10 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { Typewriter } from "react-simple-typewriter";
 import Fade from "react-reveal/Fade";
 
-export const Decorator = ({ label, withIcon, styles }) => {
+export const Decorator = ({ label, withIcon, styles, centerAlign }) => {
   const classes = useStyles();
   return (
-    <Box className={classes.decorator} style={styles}>
+    <Box className={classes.decorator} style={centerAlign ? styles : {}}>
       <Typography variant="span" className={classes.decoratorText}>
         {label}
       </Typography>
@@ -31,11 +31,10 @@ export const Divider = ({ style }) => {
 };
 
 export const RenderSectionHeading = ({
-  sectionLabel,
   heading,
-  centerAlign,
   description1,
   description2,
+  centerAlign,
   width,
 }) => {
   const classes = useStyles();
@@ -48,14 +47,6 @@ export const RenderSectionHeading = ({
   console.log(words);
   return (
     <Box className={classes.sectionHeadingContainer}>
-      <Fade right>
-        {" "}
-        {Decorator({
-          label: sectionLabel,
-          withIcon: false,
-          style: centerAlign ? { width: "100px", margin: "10px auto" } : "",
-        })}{" "}
-      </Fade>
       <Fade right>
         <Typography
           sx={{ fontWeight: "bold" }}

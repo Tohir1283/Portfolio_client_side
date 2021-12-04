@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     maxHeight: "90vh",
     height: "auto",
     background: `linear-gradient(to bottom right,#04303140
-    ,#00606473
+    ,black
     ), url(${Image})`,
     opacity: 0.656,
     backgroundSize: "cover",
@@ -62,6 +62,7 @@ export const useStyles = makeStyles((theme) => ({
   // Resume Download Button Styling
   decorator: {
     display: "flex",
+    margin: "5px 0",
     padding: "5px 0",
     color: Themes.colors.base2,
     fontWeight: "bolder",

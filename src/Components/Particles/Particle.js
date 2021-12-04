@@ -36,12 +36,12 @@ const Particle = () => {
             modes: {
               bubble: {
                 distance: 50,
-                duration: 2,
+                duration: 1,
                 opacity: 0.5,
                 size: 140,
               },
               push: {
-                quantity: 4,
+                quantity: 10,
               },
               repulse: {
                 distance: 50,
@@ -51,36 +51,43 @@ const Particle = () => {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: [
+                "#ffffff",
+                "#00FFFF",
+                "#FFFF99",
+                "#f56991",
+                "#F73718",
+                "#FEDE17",
+              ],
             },
 
             links: {
               color: "#ffffff",
-              distance: 150,
+              distance: 20,
               enable: true,
-              opacity: 0.2,
+              opacity: 0.1,
               width: 1,
             },
             collisions: {
               enable: true,
             },
             move: {
-              direction: "none",
+              direction: "top to bottom",
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 2,
+              speed: 3,
               straight: false,
             },
             number: {
               density: {
                 enable: true,
-                value_area: 1500,
+                value_area: 2500,
               },
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.3,
             },
             shape: {
               type: "edge",
