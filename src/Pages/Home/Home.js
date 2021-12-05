@@ -3,6 +3,7 @@ import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Navbar/Navbar";
 import Particle from "../../Components/Particles/Particle";
 import About from "./About/About";
+import Projects from "./Projects/Projects";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <About />
-      <br />
+      <Projects />
       <br />
       <br />
       <br />

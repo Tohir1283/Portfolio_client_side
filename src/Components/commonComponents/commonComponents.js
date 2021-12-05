@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 
 export const Decorator = ({ label, withIcon, styles, centerAlign }) => {
   const classes = useStyles();
+  console.log(styles);
   return (
     <Box className={classes.decorator} style={centerAlign ? styles : {}}>
       <Typography variant="span" className={classes.decoratorText}>
@@ -24,7 +25,7 @@ export const Decorator = ({ label, withIcon, styles, centerAlign }) => {
 export const Divider = ({ style }) => {
   const classes = useStyles();
   return (
-    <Box style={style} sx={{ my: 2 }}>
+    <Box style={style}>
       <Typography variant="span" className={classes.divider}></Typography>
     </Box>
   );

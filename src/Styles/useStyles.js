@@ -132,4 +132,9 @@ export const useStyles = makeStyles((theme) => ({
   sectionDesc: {
     color: Themes.colors.base2,
   },
+
+  // Projects Section
+  sectionDark: {
+    backgroundColor: Themes.colors.primary1,
+  },
 }));
