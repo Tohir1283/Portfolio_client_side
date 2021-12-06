@@ -9,7 +9,7 @@ import Contact from "./Contact/Contact";
 const Home = () => {
   const classes = useStyles();
   return (
-    <div className={classes.scrollContainer}>
+    <div className={classes.scrollContainer} id="home">
       <Header />
       <About />
       <Projects />

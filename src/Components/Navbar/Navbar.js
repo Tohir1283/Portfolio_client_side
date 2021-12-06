@@ -7,17 +7,19 @@ import Button from "@mui/material/Button";
 import { useStyles } from "../../Styles/useStyles";
 import MenuIcon from "@mui/icons-material/Menu";
 import Fade from "react-reveal/Fade";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const classes = useStyles();
   const navLinks = [
-    { label: "About", id: "About" },
+    { label: "About", id: "About", link: "about" },
     {
       label: "Projects",
       id: "Projects",
+      link: "projects",
     },
 
-    { label: "Contact Me", id: "Contact" },
+    { label: "Contact Me", id: "Contact", link: "contact" },
   ];
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -37,11 +39,46 @@ const Navbar = () => {
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <Fade right>
                 <Box>
-                  {navLinks.map((item, index) => (
-                    <Button id={item.id} key={index}>
-                      <span className={classes.navLinks}> {item.label}</span>
-                    </Button>
-                  ))}
+                  <Button>
+                    <span>
+                      <Link smooth to="/home#home" className={classes.navLinks}>
+                        Home
+                      </Link>
+                    </span>
+                  </Button>
+                  <Button>
+                    <span>
+                      <Link
+                        smooth
+                        to="/about#about"
+                        className={classes.navLinks}
+                      >
+                        About Me{" "}
+                      </Link>
+                    </span>
+                  </Button>
+                  <Button>
+                    <span>
+                      <Link
+                        smooth
+                        to="/projects#projects"
+                        className={classes.navLinks}
+                      >
+                        Projects
+                      </Link>
+                    </span>
+                  </Button>
+                  <Button>
+                    <span>
+                      <Link
+                        smooth
+                        to="/contact#contact"
+                        className={classes.navLinks}
+                      >
+                        Contact Me
+                      </Link>
+                    </span>
+                  </Button>
                 </Box>
               </Fade>
             </Box>

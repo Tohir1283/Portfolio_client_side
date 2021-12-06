@@ -52,7 +52,7 @@ const projects = [
 const Projects = () => {
   const classes = useStyles();
   return (
-    <div className={classes.scrollSection}>
+    <div className={classes.scrollSection} id="projects">
       <Box className={classes.projects} sx={{ pt: 8 }}>
         <Grid container>
           <Grid item xs={12} sx={8}>
@@ -94,7 +94,7 @@ const Projects = () => {
                         <Fade left>{project.title}</Fade>
                       </Typography>
                       <ul style={{ textAlign: "start", margin: "0 15px" }}>
-                        <Fade top>
+                        <Fade down>
                           {project.functions.map((functionality) => (
                             <li>{functionality}</li>
                           ))}

@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div id="contact">
       <div className={classes.scrollSection}>
         <Box className={classes.section}>
           <Container>

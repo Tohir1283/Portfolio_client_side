@@ -73,6 +73,7 @@ export const useStyles = makeStyles((theme) => ({
   // Font for navbar buttons
   navLinks: {
     color: Themes.colors.base2,
+    textDecoration: "none",
   },
   // Resume Download Button Styling
   decorator: {

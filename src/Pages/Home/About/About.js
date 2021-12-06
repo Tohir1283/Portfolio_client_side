@@ -17,7 +17,7 @@ const style = [
 const About = () => {
   const classes = useStyles();
   return (
-    <div className={classes.scrollSection}>
+    <div className={classes.scrollSection} id="about">
       <Box className={classes.section}>
         <Container>
           <Grid container spacing={5}>
