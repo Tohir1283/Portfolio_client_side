@@ -63,7 +63,7 @@ const Header = () => {
                   loop={5}
                   cursor
                   cursorStyle="_"
-                  typeSpeed={70}
+                  typeSpeed={20}
                   deleteSpeed={50}
                   delaySpeed={800}
                 />
