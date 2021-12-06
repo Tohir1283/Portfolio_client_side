@@ -1,27 +1,19 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
-import Navbar from "../../Components/Navbar/Navbar";
 import Particle from "../../Components/Particles/Particle";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
+import { useStyles } from "./../../Styles/useStyles";
+import Contact from "./Contact/Contact";
 
 const Home = () => {
+  const classes = useStyles();
   return (
-    <div>
-      <Navbar />
+    <div className={classes.scrollContainer}>
       <Header />
       <About />
       <Projects />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Contact />
       <Particle />
     </div>
   );

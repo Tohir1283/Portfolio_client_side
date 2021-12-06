@@ -1,24 +1,32 @@
-import Image from "../media/brandBanner.2541860e.jpg";
 import { makeStyles } from "@material-ui/core";
 import { Themes } from "./../Components/Themes/Themes";
 
 export const useStyles = makeStyles((theme) => ({
+  // scroll Effects
+  // scrollContainer: {
+  //   height: "100vh",
+  //   scrollSnapType: "y mandatory",
+  //   scrollSnapPointsY: "repeat(100vh)",
+  //   overflowY: "scroll",
+  // },
+  // scrollSection: {
+  //   scrollSnapAlign: "start",
+  // },
+
   //Top Banner Styling for landing page
   root: {
     width: "100%",
-    maxHeight: "90vh",
+    minHeight: "100vh",
     height: "auto",
-    background: `linear-gradient(to bottom right,#04303140
-    ,black
-    ), url(${Image})`,
-    opacity: 0.656,
+    backgroundColor: Themes.colors.base1,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    boxSizing: "border-box",
   },
   //Styling of  Section containing landing banner information
   headerContainer: {
     width: "100%",
-    maxHeight: "85vh",
+    minHeight: "100vh",
     boxSizing: "border-box",
     height: "auto",
     padding: "17% 10%",
@@ -42,6 +50,13 @@ export const useStyles = makeStyles((theme) => ({
     background: "transparent",
     backgroundColor: Themes.colors.base1,
     color: Themes.colors.base2,
+    flexGrow: 1,
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: 56,
+    },
+    [theme.breakpoints.up("sm")]: {
+      marginBottom: 64,
+    },
   },
   // Material UI Toolbar Customization
   toolbar: {
@@ -104,7 +119,9 @@ export const useStyles = makeStyles((theme) => ({
   // Styles For Web Application Body
   section: {
     backgroundColor: Themes.colors.base1,
-    padding: theme.spacing(10, 0, 8, 0),
+    padding: theme.spacing(20, 0, 8, 0),
+    minHeight: "100vh",
+    boxSizing: "border-box",
   },
 
   // Style For About ME section
@@ -134,7 +151,58 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   // Projects Section
-  sectionDark: {
+  projects: {
     backgroundColor: Themes.colors.primary1,
+    minHeight: "100vh",
+    boxSizing: "border-box",
+  },
+  // Style for projectCard
+  projectCard: {
+    border: `2px solid ${Themes.colors.primary}`,
+    borderBottom: "none",
+    borderRadius: "6px",
+    backgroundColor: "#003c64",
+  },
+  // Style For Project Card
+  projectDetails: {
+    color: Themes.colors.base2,
+  },
+  // Style For Forms
+  form: {
+    marginTop: "10px",
+    display: "flex",
+    flexDirection: "column",
+  },
+
+  // Style For form Items
+  formItems: {
+    width: "300px",
+    background: "none",
+    padding: "15px 18px",
+    marginTop: "10px",
+    marginLeft: "10px",
+    border: "1px solid white",
+    borderRadius: "55px",
+    outline: "none",
+    color: "white",
+    "&:focus": {
+      borderColor: "yellow",
+    },
+  },
+
+  buttonSubmit: {
+    width: "90px",
+    marginTop: "10px",
+    marginLeft: "20px",
+    padding: "6px 22px",
+    borderRadius: "12px",
+    borderColor: "white",
+    background: "none",
+    color: "white",
+
+    "&:hover": {
+      color: "gold",
+      borderColor: "gold",
+    },
   },
 }));

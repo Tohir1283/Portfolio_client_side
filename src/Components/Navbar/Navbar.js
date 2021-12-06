@@ -11,6 +11,7 @@ import Fade from "react-reveal/Fade";
 const Navbar = () => {
   const classes = useStyles();
   const navLinks = [
+    { label: "About", id: "About" },
     {
       label: "Projects",
       id: "Projects",
@@ -20,7 +21,7 @@ const Navbar = () => {
   ];
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar color="transparent" position="fixed" sx={{ boxShadow: 0 }}>
+      <AppBar color="transparent" sticky sx={{ boxShadow: 0 }}>
         <Toolbar className={classes.navbar}>
           <Box className={classes.toolbar}>
             <Fade left>

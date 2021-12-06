@@ -11,7 +11,7 @@ const Header = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.scrollSection}>
       <Box className={classes.root}>
         <Box className={classes.headerContainer}>
           <Fade up left>

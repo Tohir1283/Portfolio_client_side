@@ -37,6 +37,7 @@ export const RenderSectionHeading = ({
   description2,
   centerAlign,
   width,
+  notSpaced,
 }) => {
   const classes = useStyles();
   const words = [];
@@ -84,7 +85,6 @@ export const RenderSectionHeading = ({
           {description1}
         </Typography>
       </Fade>
-      <p></p>
       <Fade right>
         <Typography
           variant="body1"
