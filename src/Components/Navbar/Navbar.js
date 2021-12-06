@@ -11,16 +11,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const classes = useStyles();
-  const navLinks = [
-    { label: "About", id: "About", link: "about" },
-    {
-      label: "Projects",
-      id: "Projects",
-      link: "projects",
-    },
 
-    { label: "Contact Me", id: "Contact", link: "contact" },
-  ];
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar color="transparent" sticky sx={{ boxShadow: 0 }}>
