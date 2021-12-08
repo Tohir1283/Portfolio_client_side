@@ -4,7 +4,7 @@ import Particle from "../../Components/Particles/Particle";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import { useStyles } from "./../../Styles/useStyles";
-import Contact from "./Contact/Contact";
+// import Contact from "./Contact/Contact";
 
 const Home = () => {
   const classes = useStyles();
