@@ -70,8 +70,8 @@ const Header = () => {
                       cursor
                       cursorStyle="_"
                       typeSpeed={10}
-                      deleteSpeed={10}
-                      delaySpeed={800}
+                      deleteSpeed={30}
+                      delaySpeed={500}
                     />
                   </span>
                 </Typography>

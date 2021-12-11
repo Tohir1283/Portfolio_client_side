@@ -43,6 +43,7 @@ export const useStyles = makeStyles((theme) => ({
   // Top Banner information description
   headerDesc: {
     textAlign: "left",
+    fontSize: ".8rem",
     color: Themes.colors.base2,
   },
   // Material UI AppBar Customization
