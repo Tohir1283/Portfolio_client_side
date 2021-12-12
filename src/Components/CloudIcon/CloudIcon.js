@@ -30,7 +30,6 @@ const jsIconTag = [
 ].map((s) =>
   renderSimpleIcon({
     icon: allIcons.Get(s),
-    size: 82,
   })
 );
 
