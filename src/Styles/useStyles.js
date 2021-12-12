@@ -28,7 +28,7 @@ export const useStyles = makeStyles((theme) => ({
     width: "100%",
     boxSizing: "border-box",
     height: "auto",
-    padding: "25% 5% 0 15%",
+    padding: "30% 5% 0 15%",
     fontFamily: "'Poppins', sans-serif",
     textAlign: "left",
     textShadow: "2px 2px 1px black",

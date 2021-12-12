@@ -40,7 +40,7 @@ const CloudIcon = () => {
   const cloudProps = {};
   return (
     <div>
-      <Box sx={{ pt: { lg: 15 }, pe: 25 }}>
+      <Box sx={{ pt: { md: 25, lg: 20 }, pr: { xs: -5, sm: 0, lg: 25 } }}>
         <Cloud
           containerProps={containerProps}
           canvasProps={canvasProps}
