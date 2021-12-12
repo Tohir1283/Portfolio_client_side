@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 import { Typewriter } from "react-simple-typewriter";
 import { Decorator } from "../commonComponents/commonComponents";
 import Grid from "@mui/material/Grid";
+import CloudIcon from "../CloudIcon/CloudIcon";
 
 const Header = () => {
   const classes = useStyles();
@@ -15,7 +16,7 @@ const Header = () => {
     <div className={classes.scrollSection}>
       <Box className={classes.root}>
         <Grid container>
-          <Grid item xs={12} md={8} lg={7}>
+          <Grid item xs={12} md={12} lg={7}>
             <Box className={classes.headerContainer}>
               <Fade up left>
                 <Decorator label="Resume" withIcon={true} />
@@ -78,7 +79,9 @@ const Header = () => {
               </Fade>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4} lg={5}></Grid>
+          <Grid item xs={12} md={12} lg={5}>
+            <CloudIcon />
+          </Grid>
         </Grid>
       </Box>
     </div>

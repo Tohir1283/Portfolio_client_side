@@ -26,10 +26,9 @@ export const useStyles = makeStyles((theme) => ({
   //Styling of  Section containing landing banner information
   headerContainer: {
     width: "100%",
-    minHeight: "100vh",
     boxSizing: "border-box",
     height: "auto",
-    padding: "30% 15%",
+    padding: "25% 15%",
     fontFamily: "'Poppins', sans-serif",
     textAlign: "left",
     textShadow: "2px 2px 1px black",
@@ -120,7 +119,7 @@ export const useStyles = makeStyles((theme) => ({
   // Styles For Web Application Body
   section: {
     backgroundColor: Themes.colors.base1,
-    padding: theme.spacing(20, 0, 8, 0),
+    padding: theme.spacing(10, 0, 8, 0),
     minHeight: "100vh",
     boxSizing: "border-box",
   },
