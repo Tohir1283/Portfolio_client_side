@@ -29,7 +29,7 @@ export const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
     boxSizing: "border-box",
     height: "auto",
-    padding: "35% 15%",
+    padding: "30% 15%",
     fontFamily: "'Poppins', sans-serif",
     textAlign: "left",
     textShadow: "2px 2px 1px black",
@@ -43,7 +43,6 @@ export const useStyles = makeStyles((theme) => ({
   // Top Banner information description
   headerDesc: {
     textAlign: "left",
-    fontSize: ".8rem",
     color: Themes.colors.base2,
   },
   // Material UI AppBar Customization

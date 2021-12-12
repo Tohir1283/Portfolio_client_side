@@ -15,7 +15,7 @@ const Header = () => {
     <div className={classes.scrollSection}>
       <Box className={classes.root}>
         <Grid container>
-          <Grid item xs={12} md={8} lg={6}>
+          <Grid item xs={12} md={8} lg={7}>
             <Box className={classes.headerContainer}>
               <Fade up left>
                 <Decorator label="Resume" withIcon={true} />
@@ -78,7 +78,7 @@ const Header = () => {
               </Fade>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4} lg={6}></Grid>
+          <Grid item xs={12} md={4} lg={5}></Grid>
         </Grid>
       </Box>
     </div>
