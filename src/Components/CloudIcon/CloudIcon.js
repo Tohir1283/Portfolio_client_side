@@ -30,6 +30,7 @@ const jsIconTag = [
 ].map((s) =>
   renderSimpleIcon({
     icon: allIcons.Get(s),
+    size: 82,
   })
 );
 
@@ -39,7 +40,7 @@ const CloudIcon = () => {
   const cloudProps = {};
   return (
     <div>
-      <Box sx={{ pt: { lg: 15 }, pe: 15 }}>
+      <Box sx={{ pt: { lg: 15 }, pe: 25 }}>
         <Cloud
           containerProps={containerProps}
           canvasProps={canvasProps}
