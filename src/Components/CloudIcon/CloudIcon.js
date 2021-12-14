@@ -1,19 +1,20 @@
 import { Box } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import { Cloud, renderSimpleIcon } from "react-icon-cloud";
 import allIcons from "simple-icons";
 
 const CloudIcon = () => {
-  const [background, setBackground] = useState("#151515");
+  const background = "#151515";
+  // const [background, setBackground] = useState("#151515");
 
-  const toggleBg = () => {
-    if (background === "#151515") {
-      setBackground("#000");
-      return;
-    }
+  // const toggleBg = () => {
+  //   if (background === "#151515") {
+  //     setBackground("#000");
+  //     return;
+  //   }
 
-    setBackground("#fff");
-  };
+  //   setBackground("#fff");
+  // };
 
   const jsIconTag = [
     "typescript",
