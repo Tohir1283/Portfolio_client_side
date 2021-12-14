@@ -1,45 +1,60 @@
 import { Box } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { Cloud, renderSimpleIcon } from "react-icon-cloud";
 import allIcons from "simple-icons";
 
-const jsIconTag = [
-  "typescript",
-  "javascript",
-  "react",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "express",
-  "firebase",
-  "git",
-  "github",
-  "gitlab",
-  "visualstudiocode",
-  "figma",
-  "heroku",
-  "netlify",
-  "adobexd",
-  "adobelightroom",
-  "adobephotoshop",
-  "visualstudiocode",
-  "c",
-  "mongodb",
-  "mui",
-  "sass",
-  "kalilinux",
-  "bootstrap",
-  "chakraui",
-  "svg",
-  "adobeillustrator",
-].map((s) =>
-  renderSimpleIcon({
-    icon: allIcons.Get(s),
-    size: 82,
-  })
-);
-
 const CloudIcon = () => {
+  const [background, setBackground] = useState("#151515");
+
+  const toggleBg = () => {
+    if (background === "#151515") {
+      setBackground("#000");
+      return;
+    }
+
+    setBackground("#fff");
+  };
+
+  const jsIconTag = [
+    "typescript",
+    "javascript",
+    "react",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "firebase",
+    "git",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "figma",
+    "heroku",
+    "netlify",
+    "adobexd",
+    "adobelightroom",
+    "adobephotoshop",
+    "visualstudiocode",
+    "c",
+    "mongodb",
+    "mui",
+    "sass",
+    "kalilinux",
+    "bootstrap",
+    "chakraui",
+    "svg",
+    "adobeillustrator",
+  ].map((s) =>
+    renderSimpleIcon({
+      icon: allIcons.Get(s),
+      minContrastRatio: background === "#fff" ? 1.2 : 2,
+      bgHex: background,
+      size: 102,
+      fallbackHex: background === "#fff" ? "#000" : "#fff",
+      onClick: (e) => e.preventDefault(),
+    })
+  );
+
   const containerProps = {};
   const canvasProps = {};
   const cloudProps = {};
