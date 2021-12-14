@@ -38,11 +38,13 @@ const About = () => {
             >
               <br />
               <Fade right>
-                <Decorator
-                  label="About"
-                  withIcon={false}
-                  styles={{ width: "100px", margin: "10px auto" }}
-                />
+                <div style={{ width: "50px" }}>
+                  <Decorator
+                    label="About"
+                    withIcon={false}
+                    styles={{ width: "100px", margin: "10px auto" }}
+                  />
+                </div>
               </Fade>
               <RenderSectionHeading
                 heading="Who's this guy?"

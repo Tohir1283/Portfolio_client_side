@@ -27,6 +27,11 @@ const jsIconTag = [
   "mongodb",
   "mui",
   "sass",
+  "kalilinux",
+  "bootstrap",
+  "chakraui",
+  "svg",
+  "adobeillustrator",
 ].map((s) =>
   renderSimpleIcon({
     icon: allIcons.Get(s),

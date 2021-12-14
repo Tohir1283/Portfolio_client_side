@@ -15,7 +15,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { Themes } from "./../../../Components/Themes/Themes";
 
 AOS.init();
-const style = [{ width: "190px", margin: "16px auto" }];
+const style = [{ width: "230px", margin: "16px auto" }];
 
 const projects = [
   {
@@ -59,7 +59,7 @@ const Projects = () => {
             <Fade left>
               <Decorator
                 label="Projects"
-                styles={{ width: "100px", margin: "10px auto" }}
+                styles={{ width: "70px", margin: "10px auto" }}
                 centerAlign={true}
               />
             </Fade>

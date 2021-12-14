@@ -11,14 +11,18 @@ export const Decorator = ({ label, withIcon, styles, centerAlign }) => {
   console.log(styles);
   return (
     <Box className={classes.decorator} style={centerAlign ? styles : {}}>
-      <Typography variant="span" className={classes.decoratorText}>
-        {label}
-      </Typography>
-      <Typography variant="span" className={classes.resumeArrow}>
-        {withIcon && (
-          <ArrowDownwardIcon onClick={() => console.log(classes.resumeArrow)} />
-        )}
-      </Typography>
+      <div>
+        <Typography variant="span" className={classes.decoratorText}>
+          {label}
+        </Typography>
+        <Typography variant="span" className={classes.resumeArrow}>
+          {withIcon && (
+            <ArrowDownwardIcon
+              onClick={() => console.log(classes.resumeArrow)}
+            />
+          )}
+        </Typography>
+      </div>
     </Box>
   );
 };

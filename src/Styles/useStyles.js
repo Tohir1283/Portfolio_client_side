@@ -80,6 +80,7 @@ export const useStyles = makeStyles((theme) => ({
     margin: "5px 0",
     padding: "5px 0",
     color: Themes.colors.base2,
+    textShadow: "1px 1px 0px black",
     fontWeight: "bolder",
     fontFamily: "'Roboto', sans-serif",
     position: "relative",
@@ -90,6 +91,9 @@ export const useStyles = makeStyles((theme) => ({
       backgroundColor: Themes.colors.primary,
       content: "''",
       borderRadius: "50%",
+    },
+    "&:hover:before": {
+      backgroundColor: "#EEBC1D",
     },
   },
   // Resume Button text Styling
@@ -119,7 +123,7 @@ export const useStyles = makeStyles((theme) => ({
   // Styles For Web Application Body
   section: {
     backgroundColor: Themes.colors.base1,
-    padding: theme.spacing(10, 0, 8, 0),
+    padding: theme.spacing(15, 0, 8, 0),
     minHeight: "100vh",
     boxSizing: "border-box",
   },
@@ -134,6 +138,9 @@ export const useStyles = makeStyles((theme) => ({
     display: "block",
     height: "4px",
     backgroundColor: Themes.colors.primary,
+    "&:hover": {
+      backgroundColor: "gold",
+    },
   },
   // About Me image responsive Styling
   responsiveImage: {
@@ -152,16 +159,17 @@ export const useStyles = makeStyles((theme) => ({
 
   // Projects Section
   projects: {
-    backgroundColor: Themes.colors.primary1,
+    backgroundColor: Themes.colors.base1,
     minHeight: "100vh",
     boxSizing: "border-box",
+    paddingTop: "5%",
   },
   // Style for projectCard
   projectCard: {
     border: `2px solid ${Themes.colors.primary}`,
     borderBottom: "none",
     borderRadius: "6px",
-    backgroundColor: "#003c64",
+    backgroundColor: "#16161d",
   },
   // Style For Project Card
   projectDetails: {
@@ -181,7 +189,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: "15px 18px",
     marginTop: "10px",
     marginLeft: "10px",
-    border: "1px solid white",
+    border: `1px solid ${Themes.colors.primary}`,
     borderRadius: "55px",
     outline: "none",
     color: "white",
@@ -196,7 +204,7 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "20px",
     padding: "6px 22px",
     borderRadius: "12px",
-    borderColor: "white",
+    borderColor: Themes.colors.primary,
     background: "none",
     color: "white",
 

@@ -19,7 +19,9 @@ const Header = () => {
           <Grid item xs={12} md={12} lg={7}>
             <Box className={classes.headerContainer}>
               <Fade up left>
-                <Decorator label="Resume" withIcon={true} />
+                <div style={{ width: "100px" }}>
+                  <Decorator label="Resume" withIcon={true} />
+                </div>
               </Fade>
               <Typography
                 variant="h4"
@@ -80,7 +82,9 @@ const Header = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={12} lg={5}>
-            <CloudIcon />
+            <Fade right>
+              <CloudIcon />
+            </Fade>
           </Grid>
         </Grid>
       </Box>

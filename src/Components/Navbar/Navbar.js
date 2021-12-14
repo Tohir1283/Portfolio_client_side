@@ -21,6 +21,7 @@ const Navbar = () => {
               <Typography
                 variant="h4"
                 component="h6"
+                sx={{ mt: 2 }}
                 className={classes.navFont}
                 style={{ fontFamily: "'Comforter', cursive" }}
               >
