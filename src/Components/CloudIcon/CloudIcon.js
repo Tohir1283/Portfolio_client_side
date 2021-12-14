@@ -45,6 +45,10 @@ const CloudIcon = () => {
     "chakraui",
     "svg",
     "adobeillustrator",
+    "tailwindcss",
+    "stripe",
+    "redux",
+    "reactrouter",
   ].map((s) =>
     renderSimpleIcon({
       icon: allIcons.Get(s),
