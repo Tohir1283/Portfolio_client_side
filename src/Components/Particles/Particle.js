@@ -21,7 +21,7 @@ const Particle = () => {
         loaded={particlesLoaded}
         options={{
           background: {},
-          fpsLimit: 60,
+          fpsLimit: 75,
           interactivity: {
             events: {
               onClick: {
@@ -33,8 +33,8 @@ const Particle = () => {
             },
             modes: {
               bubble: {
-                distance: 1400,
-                duration: 2,
+                distance: 400,
+                duration: 20,
                 opacity: 0.8,
                 size: 10,
               },
@@ -46,9 +46,9 @@ const Particle = () => {
             },
             links: {
               color: "#3fb7db",
-              distance: 10,
+              distance: 50,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.1,
               width: 1,
               onHover: {
                 color: {
@@ -63,13 +63,13 @@ const Particle = () => {
               direction: "bottom",
               enable: true,
               random: false,
-              speed: 2,
+              speed: 1,
               straight: true,
             },
             number: {
               density: {
                 enable: true,
-                value_area: 2000,
+                value_area: 3000,
               },
               value: 80,
             },
