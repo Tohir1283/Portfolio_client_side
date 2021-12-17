@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <div id="contact">
-      <div className={classes.scrollSection}>
+      <div>
         <Box className={classes.section}>
           <Container>
             <Grid container spacing={5}>
@@ -61,13 +61,15 @@ const Contact = () => {
                 sx={{ textAlign: { xs: "center", md: "start" } }}
               >
                 <br />
-                <Fade down>
-                  <Decorator
-                    label="Contact Me"
-                    withIcon={false}
-                    styles={{ width: "100px", margin: "10px auto" }}
-                  />
-                </Fade>
+                <div style={{ width: "110px" }}>
+                  <Fade down>
+                    <Decorator
+                      label="Contact Me"
+                      withIcon={false}
+                      styles={{ width: "100px", margin: "10px auto" }}
+                    />
+                  </Fade>
+                </div>
                 <RenderSectionHeading
                   heading="Seems to be interesting?"
                   description1="Finished checking me out ? Let's talk about you."

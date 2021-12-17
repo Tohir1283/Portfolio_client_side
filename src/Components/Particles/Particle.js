@@ -20,84 +20,71 @@ const Particle = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fpsLimit: 45,
+          background: {},
+          fpsLimit: 60,
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
-              onHover: {
-                enable: true,
-                mode: "repulse",
-              },
-              resize: true,
+
+              resize: false,
             },
             modes: {
               bubble: {
-                distance: 50,
-                duration: 1,
-                opacity: 0.5,
-                size: 140,
-              },
-              push: {
-                quantity: 10,
-              },
-              repulse: {
-                distance: 50,
-                duration: 0.4,
+                distance: 1400,
+                duration: 2,
+                opacity: 0.8,
+                size: 10,
               },
             },
           },
           particles: {
             color: {
-              value: [
-                "#ffffff",
-                "#00FFFF",
-                "#FFFF99",
-                "#f56991",
-                "#F73718",
-                "#FEDE17",
-              ],
+              value: ["#3fb7db", "#FFFF00", "#990000"],
             },
-
             links: {
-              color: "#ffffff",
-              distance: 20,
+              color: "#3fb7db",
+              distance: 150,
               enable: true,
-              opacity: 0.1,
+              opacity: 0.5,
               width: 1,
+              onHover: {
+                color: {
+                  value: "#3fb7db",
+                },
+              },
             },
             collisions: {
-              enable: true,
+              enable: false,
             },
             move: {
               direction: "top to bottom",
               enable: true,
-              outMode: "bounce",
               random: false,
-              speed: 3,
-              straight: false,
+              speed: 2,
+              straight: true,
             },
             number: {
               density: {
                 enable: true,
-                value_area: 4000,
+                value_area: 5000,
               },
               value: 80,
             },
             opacity: {
-              value: 0.3,
+              value: 0.5,
             },
             shape: {
-              type: "edge",
+              type: "star",
             },
             size: {
-              random: true,
-              value: 4,
+              random: false,
+              value: 2,
             },
           },
-          detectRetina: true,
+          detectRetina: false,
         }}
       />
     </div>

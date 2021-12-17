@@ -117,7 +117,7 @@ export const useStyles = makeStyles((theme) => ({
 
   // Styles for Particles
   particles: {
-    zIndex: -1,
+    zIndex: 999,
   },
 
   // Styles For Web Application Body

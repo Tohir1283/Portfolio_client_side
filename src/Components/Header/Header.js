@@ -8,12 +8,13 @@ import { Typewriter } from "react-simple-typewriter";
 import { Decorator } from "../commonComponents/commonComponents";
 import Grid from "@mui/material/Grid";
 import CloudIcon from "../CloudIcon/CloudIcon";
+import Particle from "./../Particles/Particle";
 
 const Header = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.scrollSection}>
+    <div>
       <Box className={classes.root}>
         <Grid container>
           <Grid item xs={12} md={12} lg={7}>
@@ -88,6 +89,7 @@ const Header = () => {
           </Grid>
         </Grid>
       </Box>
+      <Particle />
     </div>
   );
 };

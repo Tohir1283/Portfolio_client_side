@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar color="transparent" sticky sx={{ boxShadow: 0 }}>
+      <AppBar color="transparent" sx={{ boxShadow: 0 }}>
         <Toolbar className={classes.navbar}>
           <Box className={classes.toolbar}>
             <Fade left>
@@ -33,40 +33,28 @@ const Navbar = () => {
                 <Box>
                   <Button>
                     <span>
-                      <Link smooth to="/home#home" className={classes.navLinks}>
+                      <Link smooth to="/#home" className={classes.navLinks}>
                         Home
                       </Link>
                     </span>
                   </Button>
                   <Button>
                     <span>
-                      <Link
-                        smooth
-                        to="/about#about"
-                        className={classes.navLinks}
-                      >
+                      <Link smooth to="/#about" className={classes.navLinks}>
                         About Me{" "}
                       </Link>
                     </span>
                   </Button>
                   <Button>
                     <span>
-                      <Link
-                        smooth
-                        to="/projects#projects"
-                        className={classes.navLinks}
-                      >
+                      <Link smooth to="/#projects" className={classes.navLinks}>
                         Projects
                       </Link>
                     </span>
                   </Button>
                   <Button>
                     <span>
-                      <Link
-                        smooth
-                        to="/contact#contact"
-                        className={classes.navLinks}
-                      >
+                      <Link smooth to="/#contact" className={classes.navLinks}>
                         Contact Me
                       </Link>
                     </span>
