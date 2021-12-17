@@ -2,17 +2,6 @@ import { makeStyles } from "@material-ui/core";
 import { Themes } from "./../Components/Themes/Themes";
 
 export const useStyles = makeStyles((theme) => ({
-  // scroll Effects
-  // scrollContainer: {
-  //   height: "100vh",
-  //   scrollSnapType: "y mandatory",
-  //   scrollSnapPointsY: "repeat(100vh)",
-  //   overflowY: "scroll",
-  // },
-  // scrollSection: {
-  //   scrollSnapAlign: "start",
-  // },
-
   //Top Banner Styling for landing page
   root: {
     width: "100%",
