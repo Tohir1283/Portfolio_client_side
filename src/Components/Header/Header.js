@@ -9,6 +9,7 @@ import { Decorator } from "../commonComponents/commonComponents";
 import Grid from "@mui/material/Grid";
 import CloudIcon from "../CloudIcon/CloudIcon";
 import Particle from "./../Particles/Particle";
+import Container from "@mui/material/Container";
 
 const Header = () => {
   const classes = useStyles();
@@ -24,13 +25,16 @@ const Header = () => {
                   <Decorator label="Resume" withIcon={true} />
                 </div>
               </Fade>
-              <Typography
-                variant="h4"
-                sx={{ fontWeight: 700 }}
-                className={classes.headerTitle}
-              >
-                <Fade left>Hi! I am Tohirul Islam.</Fade>
-              </Typography>
+              <Fade left>
+                <Typography
+                  variant="h4"
+                  sx={{ fontWeight: 700 }}
+                  className={classes.headerTitle}
+                >
+                  Hi! I am{" "}
+                  <span style={{ color: "#e31b6d" }}>Tohirul Islam.</span>
+                </Typography>
+              </Fade>
               <Typography
                 variant="h5"
                 component="h6"
@@ -89,7 +93,9 @@ const Header = () => {
           </Grid>
         </Grid>
       </Box>
-      <Particle />
+      <Container>
+        <Particle />
+      </Container>
     </div>
   );
 };
