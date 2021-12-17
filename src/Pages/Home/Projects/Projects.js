@@ -1,6 +1,8 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Button, Grid, Typography } from "@mui/material";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
 import { useStyles } from "./../../../Styles/useStyles";
 import Fade from "react-reveal/Fade";
 import {
@@ -9,10 +11,10 @@ import {
 } from "./../../../Components/commonComponents/commonComponents";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Container } from "@material-ui/core";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Themes } from "./../../../Components/Themes/Themes";
+import Container from "@mui/material/Container";
 
 AOS.init();
 const style = [{ width: "230px", margin: "16px auto" }];

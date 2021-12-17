@@ -1,5 +1,5 @@
-import { Box } from "@material-ui/core";
-import { Container, Grid } from "@mui/material";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 import React from "react";
 import { useStyles } from "../../../Styles/useStyles";
 import Image from "../../../media/About.964e39b2.jpg";
@@ -8,6 +8,7 @@ import {
   RenderSectionHeading,
 } from "./../../../Components/commonComponents/commonComponents";
 import Fade from "react-reveal/Fade";
+import Box from "@mui/material/Box";
 
 const style = [
   { width: "320px", margin: "15px 0" },
