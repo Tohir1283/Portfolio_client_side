@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import { Cloud, renderSimpleIcon } from "react-icon-cloud";
-import allIcons from "simple-icons";
+import allIcons from "simple-icons/icons";
 
 const CloudIcon = () => {
   const background = "#151515";
