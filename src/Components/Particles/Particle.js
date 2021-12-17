@@ -46,7 +46,7 @@ const Particle = () => {
             },
             links: {
               color: "#3fb7db",
-              distance: 150,
+              distance: 10,
               enable: true,
               opacity: 0.5,
               width: 1,
@@ -60,7 +60,7 @@ const Particle = () => {
               enable: false,
             },
             move: {
-              direction: "top to bottom",
+              direction: "bottom",
               enable: true,
               random: false,
               speed: 2,
@@ -69,12 +69,12 @@ const Particle = () => {
             number: {
               density: {
                 enable: true,
-                value_area: 5000,
+                value_area: 2000,
               },
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.25,
             },
             shape: {
               type: "star",

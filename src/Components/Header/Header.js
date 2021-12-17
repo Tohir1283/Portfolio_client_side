@@ -74,12 +74,12 @@ const Header = () => {
                         "I strive to build immersive and beautiful web applications using modern technologies.",
                         "I strive to build immersive and beautiful web applications using modern technologies.",
                       ]}
-                      loop={5}
+                      loop={500}
                       cursor
                       cursorStyle="_"
                       typeSpeed={1}
                       deleteSpeed={3}
-                      delaySpeed={500}
+                      delaySpeed={35}
                     />
                   </span>
                 </Typography>
