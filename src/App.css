@@ -3,7 +3,7 @@
 .App {
   text-align: center;
 
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease-in-out 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -12,11 +12,8 @@
   0% {
     opacity: 0;
   }
-  30% {
-    opacity: 0.3;
-  }
-  70% {
-    opacity: 0.7;
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
