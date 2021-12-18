@@ -4,7 +4,6 @@ import Box from "@mui/material/Box";
 import { useStyles } from "../../Styles/useStyles";
 import Typography from "@mui/material/Typography";
 import Fade from "react-reveal/Fade";
-import { Typewriter } from "react-simple-typewriter";
 import { Decorator } from "../commonComponents/commonComponents";
 import Grid from "@mui/material/Grid";
 import CloudIcon from "../CloudIcon/CloudIcon";
