@@ -65,22 +65,9 @@ const Header = () => {
                   }}
                 >
                   <span className={classes.headerDesc}>
-                    {/* Style will be inherited from the parent element */}
-                    <Typewriter
-                      words={[
-                        "I strive to build immersive and beautiful web applications using modern technologies.",
-                        "I strive to build immersive and beautiful web applications using modern technologies.",
-                        "I strive to build immersive and beautiful web applications using modern technologies.",
-                        "I strive to build immersive and beautiful web applications using modern technologies.",
-                        "I strive to build immersive and beautiful web applications using modern technologies.",
-                      ]}
-                      loop={500}
-                      cursor
-                      cursorStyle="_"
-                      typeSpeed={1}
-                      deleteSpeed={3}
-                      delaySpeed={35}
-                    />
+                    {/* Style will be inherited from the parent element */}I
+                    strive to build immersive and beautiful web applications
+                    using modern technologies.
                   </span>
                 </Typography>
               </Fade>
