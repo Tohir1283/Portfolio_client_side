@@ -26,8 +26,7 @@ const Header = () => {
               </Fade>
               <Fade left>
                 <Typography
-                  variant="h4"
-                  sx={{ fontWeight: 700 }}
+                  sx={{ fontWeight: 600, fontSize: { xs: "1.2rem" } }}
                   className={classes.headerTitle}
                 >
                   Hi! I am{" "}

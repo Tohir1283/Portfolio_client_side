@@ -17,7 +17,7 @@ export const useStyles = makeStyles((theme) => ({
     width: "100%",
     boxSizing: "border-box",
     height: "auto",
-    padding: "30% 5% 0 15%",
+    padding: "26% 5% 0 10%",
     fontFamily: "'Poppins', sans-serif",
     textAlign: "left",
     textShadow: "2px 2px 1px black",
@@ -25,7 +25,7 @@ export const useStyles = makeStyles((theme) => ({
   // Top Banner information heading
   headerTitle: {
     textAlign: "left",
-    fontSize: "3rem",
+    fontSize: "2rem",
     color: Themes.colors.base2,
   },
   // Top Banner information description
@@ -49,7 +49,7 @@ export const useStyles = makeStyles((theme) => ({
   // Material UI Toolbar Customization
   toolbar: {
     width: "100%",
-    padding: "0 5%",
+    padding: "1% 5%",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
