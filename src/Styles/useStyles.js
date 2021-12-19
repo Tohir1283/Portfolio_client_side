@@ -17,10 +17,15 @@ export const useStyles = makeStyles((theme) => ({
     width: "100%",
     boxSizing: "border-box",
     height: "auto",
-    padding: "26% 5% 0 10%",
     fontFamily: "'Poppins', sans-serif",
     textAlign: "left",
     textShadow: "2px 2px 1px black",
+    [theme.breakpoints.down("md")]: {
+      padding: "50% 5% 0 10%",
+    },
+    [theme.breakpoints.up("md")]: {
+      padding: "30% 5% 0 15%",
+    },
   },
   // Top Banner information heading
   headerTitle: {
